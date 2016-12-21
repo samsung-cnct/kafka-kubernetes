@@ -34,6 +34,13 @@ spec:
         image: quay.io/samsung_cnct/kafka-petset:0.1
         ports:
         - containerPort: 9092
+        resources:
+          limits:
+            cpu: 500m
+            memory: 4Gi
+          requests:
+            cpu: 500m
+            memory: 4Gi
         env:
         - name: KAFKA_ZOOKEEPER_CONNECT
           value: "zk:2181/kafka"
