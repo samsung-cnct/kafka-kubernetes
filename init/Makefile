@@ -15,7 +15,7 @@
 all: push
 
 TAG = 0.1
-PREFIX = quay.io/samsung_cnct/kafka-petset
+PREFIX = quay.io/samsung_cnct/kafka-statefulset
 
 container:
 	docker build -t $(PREFIX):$(TAG) .
