@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: kafka
-        image: quay.io/samsung_cnct/kafka-petset:0.1
+        image: quay.io/samsung_cnct/kafka-statefulset
         ports:
         - containerPort: 9092
         resources:
